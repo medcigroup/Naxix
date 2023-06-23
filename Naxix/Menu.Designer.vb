@@ -23,52 +23,87 @@ Partial Class Menu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Menu))
-        SplitContainer1 = New SplitContainer()
         Button1 = New Button()
-        CType(SplitContainer1, ComponentModel.ISupportInitialize).BeginInit()
-        SplitContainer1.Panel1.SuspendLayout()
-        SplitContainer1.SuspendLayout()
+        Button2 = New Button()
+        Button3 = New Button()
+        Button5 = New Button()
+        Button6 = New Button()
+        Button4 = New Button()
         SuspendLayout()
-        ' 
-        ' SplitContainer1
-        ' 
-        SplitContainer1.Dock = DockStyle.Fill
-        SplitContainer1.Location = New Point(0, 0)
-        SplitContainer1.Name = "SplitContainer1"
-        ' 
-        ' SplitContainer1.Panel1
-        ' 
-        SplitContainer1.Panel1.Controls.Add(Button1)
-        SplitContainer1.Size = New Size(861, 468)
-        SplitContainer1.SplitterDistance = 287
-        SplitContainer1.TabIndex = 0
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(8, 7)
+        Button1.BackColor = Color.Lime
+        Button1.Cursor = Cursors.Hand
+        Button1.Image = My.Resources.Resources.talent_search
+        resources.ApplyResources(Button1, "Button1")
         Button1.Name = "Button1"
-        Button1.Size = New Size(276, 35)
-        Button1.TabIndex = 0
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
+        Button2.Cursor = Cursors.Hand
+        Button2.Image = My.Resources.Resources.budget__2_
+        resources.ApplyResources(Button2, "Button2")
+        Button2.Name = "Button2"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(192))
+        Button3.Cursor = Cursors.Hand
+        Button3.Image = My.Resources.Resources.bullhorn
+        resources.ApplyResources(Button3, "Button3")
+        Button3.Name = "Button3"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' Button5
+        ' 
+        Button5.BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
+        Button5.Cursor = Cursors.Hand
+        Button5.Image = My.Resources.Resources.programmer
+        resources.ApplyResources(Button5, "Button5")
+        Button5.Name = "Button5"
+        Button5.UseVisualStyleBackColor = False
+        ' 
+        ' Button6
+        ' 
+        Button6.BackColor = Color.LightSteelBlue
+        Button6.Cursor = Cursors.Hand
+        Button6.Image = My.Resources.Resources.setting
+        resources.ApplyResources(Button6, "Button6")
+        Button6.Name = "Button6"
+        Button6.UseVisualStyleBackColor = False
+        ' 
+        ' Button4
+        ' 
+        Button4.BackColor = Color.Yellow
+        Button4.Cursor = Cursors.Hand
+        Button4.Image = My.Resources.Resources.growth
+        resources.ApplyResources(Button4, "Button4")
+        Button4.Name = "Button4"
+        Button4.UseVisualStyleBackColor = False
         ' 
         ' Menu
         ' 
-        AutoScaleDimensions = New SizeF(11F, 22F)
+        resources.ApplyResources(Me, "$this")
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(861, 468)
-        Controls.Add(SplitContainer1)
-        Font = New Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Icon = CType(resources.GetObject("$this.Icon"), Icon)
-        Margin = New Padding(4)
+        Controls.Add(Button4)
+        Controls.Add(Button6)
+        Controls.Add(Button5)
+        Controls.Add(Button3)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
+        MaximizeBox = False
         Name = "Menu"
-        Text = "Menu"
-        SplitContainer1.Panel1.ResumeLayout(False)
-        CType(SplitContainer1, ComponentModel.ISupportInitialize).EndInit()
-        SplitContainer1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button4 As Button
 End Class
